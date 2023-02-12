@@ -2806,6 +2806,8 @@ QMenu* CallGraphView::addNodeLimitMenu(QMenu* menu)
 	addNodeLimitAction(m, tr("5 %"), .05);
 	addNodeLimitAction(m, tr("2 %"), .02);
 	addNodeLimitAction(m, tr("1 %"), .01);
+	addNodeLimitAction(m, tr("0.1 %"), .001);
+	addNodeLimitAction(m, tr("0.01 %"), .0001);
 
 	connect(m, SIGNAL(triggered(QAction*)),
 			this, SLOT(nodeLimitTriggered(QAction*)) );
